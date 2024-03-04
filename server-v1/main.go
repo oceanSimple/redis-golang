@@ -1,16 +1,21 @@
 package main
 
 import (
-	"container/list"
+	"bufio"
 	"fmt"
+	"os"
+	"server-v1/command"
 )
 
-type myInt int
-
 func main() {
-	l := list.New()
-	l.PushBack(1)
-	l.PushBack(2)
-	l.PushBack(4)
-	fmt.Println(l.Back().Value)
+	terminalReader := bufio.NewReader(os.Stdin)
+	var input string
+	var cmd *command.Command
+	var cmdTool = &command.Command{}
+	for {
+		fmt.Println("请输入命令:")
+		input, _ = terminalReader.ReadString('\n')
+		cmd = cmdTool.ParseCommand(input)
+		_ = cmdTool.ExecuteCommand(cmd)
+	}
 }
