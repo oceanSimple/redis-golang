@@ -4,18 +4,14 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"server-v1/command"
+	"strings"
 )
 
 func main() {
-	terminalReader := bufio.NewReader(os.Stdin)
-	var input string
-	var cmd *command.Command
-	var cmdTool = &command.Command{}
-	for {
-		fmt.Println("请输入命令:")
-		input, _ = terminalReader.ReadString('\n')
-		cmd = cmdTool.ParseCommand(input)
-		_ = cmdTool.ExecuteCommand(cmd)
-	}
+	var reader = bufio.NewReader(os.Stdin)
+	fmt.Println("请输入: ")
+	var text, _ = reader.ReadString('\n')
+	text = strings.TrimSuffix(text, "\n")
+	fmt.Println("打印去除换行的文本：" + text)
+	fmt.Println("打印split后的切片：", strings.Split(text, " "))
 }

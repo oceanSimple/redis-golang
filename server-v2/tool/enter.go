@@ -1,11 +1,11 @@
 package tool
 
-import "server-v2/command"
-
 var (
-	CmdTool command.Tool
+	CmdTool commandTool
+	StrTool stringTool
 )
 
 func init() {
-	CmdTool = command.Tool{}
+	CmdTool = commandTool{}
+	StrTool = stringTool{}
 }

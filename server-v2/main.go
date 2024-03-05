@@ -2,21 +2,25 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"server-v2/model"
 	"server-v2/tool"
 )
 
 func main() {
-	terminalReader := bufio.NewReader(os.Stdin)
-	var input string
-	var cmd *model.Command
-	var cmdTool = tool.CmdTool
+	var (
+		reader = bufio.NewReader(os.Stdin)
+		cmdStr string
+		err    error
+		cmd    *model.Command
+	)
 	for {
-		fmt.Println("请输入命令:")
-		input, _ = terminalReader.ReadString('\n')
-		cmd = cmdTool.ParseCommand(input)
-		_ = cmdTool.ExecuteCommand(cmd)
+		cmdStr, err = reader.ReadString('\n')
+		if err != nil {
+			break
+		}
+		cmdStr = tool.StrTool.TrimEndN(cmdStr)
+		cmd = tool.CmdTool.ParseCommand(cmdStr)
+		_ = tool.CmdTool.ExecuteCommand(*cmd)
 	}
 }
