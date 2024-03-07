@@ -1,7 +1,13 @@
 package global
 
-import "server-v2/model"
+import (
+	"container/list"
+	"server-v2/model"
+)
 
 type MapSet struct {
-	SdsMap map[string]model.Sds
+	SdsMap  map[string]model.Sds
+	ListMap map[string][]list.List
+	HashMap map[string]map[string]model.Sds
+	SetMap  map[string]model.Set
 }

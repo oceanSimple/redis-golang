@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"os"
-	"server-v2/model"
+	"server-v2/command"
 	"server-v2/tool"
 )
 
@@ -12,7 +12,7 @@ func main() {
 		reader = bufio.NewReader(os.Stdin)
 		cmdStr string
 		err    error
-		cmd    *model.Command
+		// cmd    *model.Command
 	)
 	for {
 		cmdStr, err = reader.ReadString('\n')
@@ -20,7 +20,6 @@ func main() {
 			break
 		}
 		cmdStr = tool.StrTool.TrimEndN(cmdStr)
-		cmd = tool.CmdTool.ParseCommand(cmdStr)
-		_ = tool.CmdTool.ExecuteCommand(*cmd)
+		_ = command.CmdParseTool.ExecuteCmd(cmdStr)
 	}
 }

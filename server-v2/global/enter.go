@@ -6,13 +6,17 @@ import (
 )
 
 var (
-	Map    MapSet
-	Config RunTimeConfig
+	Map     MapSet
+	Config  RunTimeConfig
+	CmdType *CmdTypeEnum
+	CmdMap  map[string]string
 )
 
 func init() {
 	mapInit()
 	configInit()
+	cmdTypeInit()
+	cmdMapInit()
 }
 
 func mapInit() {
@@ -26,4 +30,18 @@ func configInit() {
 	Config = RunTimeConfig{
 		Os: runtime.GOOS,
 	}
+}
+
+func cmdMapInit() {
+	CmdMap = make(map[string]string)
+	addExpireCommand(CmdMap)
+	addSdsCommand(CmdMap)
+	addListCommand(CmdMap)
+	addHashCommand(CmdMap)
+	addSetCommand(CmdMap)
+}
+
+func cmdTypeInit() {
+	CmdType = &CmdTypeEnum{}
+	CmdType.init()
 }
