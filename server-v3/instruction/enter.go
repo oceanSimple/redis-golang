@@ -19,6 +19,5 @@ func cmdTypeEnumInit() {
 
 func instructionMapInit() {
 	InsMap = make(map[string]*model.Instruction)
-	InsMap["set"] = set()
-	InsMap["get"] = get()
+	addSdsInsToMap()
 }

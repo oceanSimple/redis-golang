@@ -1,6 +1,6 @@
 package builder
 
-import "server-v2/model"
+import "server-v3/model"
 
 type setBuilder struct {
 	set *model.Set

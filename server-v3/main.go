@@ -39,7 +39,7 @@ func instructionWhile() {
 		if err != nil {
 			break
 		}
-		cmdStr = tool.StringTool.TrimEndN(cmdStr)
+		cmdStr = tool.StringTool.HandleUserInstruction(cmdStr)
 		instruction.ExecuteInstruction(cmdStr, 1)
 	}
 }

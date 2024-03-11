@@ -1,6 +1,8 @@
 package instruction
 
 import (
+	"go.uber.org/zap"
+	"server-v3/log"
 	"server-v3/persistence/aof"
 	"strings"
 )
@@ -10,6 +12,11 @@ import (
 // 1: user --- user input
 func ExecuteInstruction(str string, flag int) {
 	splits := strings.Split(str, " ")
+	// TODO Now, we only support the command which has at least 2 parts
+	if len(splits) < 2 {
+		return
+	}
+	// get the instruction from the map
 	ins := InsMap[splits[0]]
 	if ins == nil {
 		return
@@ -19,6 +26,8 @@ func ExecuteInstruction(str string, flag int) {
 
 	err := ins.Execute(ins)
 	if err != nil {
+		log.SystemLog.Error("failed to execute instruction",
+			zap.Error(err))
 		return
 	}
 
