@@ -5,15 +5,33 @@ import (
 	"fmt"
 	"os"
 	"server-v3/instruction"
+	"server-v3/persistence"
+	"server-v3/persistence/aof"
 	"server-v3/tool"
+	_ "server-v3/viper"
 )
 
 func main() {
+	LoadData()
+	startAofRoutine()
+	instructionWhile()
+}
+
+func LoadData() {
+	persistence.LoadAofFile()
+}
+
+func startAofRoutine() {
+	go func() {
+		aof.GoRoutineMethod()
+	}()
+}
+
+func instructionWhile() {
 	var (
 		reader = bufio.NewReader(os.Stdin)
 		cmdStr string
 		err    error
-		// cmd    *model.Command
 	)
 	for {
 		fmt.Print("> ")
@@ -22,6 +40,6 @@ func main() {
 			break
 		}
 		cmdStr = tool.StringTool.TrimEndN(cmdStr)
-		instruction.ExecuteInstruction(cmdStr)
+		instruction.ExecuteInstruction(cmdStr, 1)
 	}
 }
