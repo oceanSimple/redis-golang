@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a81cc6d7-4f17-448e-8785-7fe3b903e3b6" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../server-v3/instruction/expireInstruction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global/map.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instruction/commandTypeEnum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instruction/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instruction/execute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instruction/expireInstruction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instruction/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instruction/sdsInstruction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instruction/tool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/myLog.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/instruction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/sds.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aof.aof" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aof/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aof/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aof/routineTask.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aof/tool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aof/writeTactic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aofLoad.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viper/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viper/enter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server-v3/global/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/../server-v3/global/map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server-v3/instruction/enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/../server-v3/instruction/enter.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/go/go1.21.3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2dXj6rOTBCMBducBvM3Ouwsi9Ow" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "D:/temp/redis-golang/server-v4/persistence",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.import"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\temp\redis-golang\server-v4\persistence" />
+      <recent name="D:\temp\redis-golang\server-v4\persistence\aof" />
+      <recent name="D:\temp\redis-golang\server-v4\instruction" />
+      <recent name="D:\temp\redis-golang\server-v4" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="server-v4" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="server-v4" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 构建.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

@@ -1,11 +1,6 @@
 package instruction
 
-import "server-v3/model"
-
-var (
-	CmdTypeEnum *CommandTypeEnum
-	InsMap      map[string]*model.Instruction
-)
+import "server-v4/model"
 
 func init() {
 	cmdTypeEnumInit()
@@ -13,8 +8,8 @@ func init() {
 }
 
 func cmdTypeEnumInit() {
-	CmdTypeEnum = &CommandTypeEnum{}
-	CmdTypeEnum.init()
+	cmdTypeEnum = &commandTypeEnum{}
+	cmdTypeEnum.init()
 }
 
 func instructionMapInit() {
