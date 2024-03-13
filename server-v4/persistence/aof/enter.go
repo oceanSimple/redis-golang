@@ -19,3 +19,7 @@ var (
 	// GoRoutineMethod is the method to run the aof go routine
 	GoRoutineMethod func()
 )
+
+func GetFileConnector() *os.File {
+	return fileConnector
+}

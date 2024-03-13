@@ -12,7 +12,9 @@ import (
 func main() {
 	LoadData()
 	startAofRoutine()
-	instructionWhile()
+
+	persistence.ReWriteFunc{}.Rewrite()
+	// instructionWhile()
 }
 
 func LoadData() {

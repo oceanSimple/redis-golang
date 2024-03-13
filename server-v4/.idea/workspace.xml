@@ -5,38 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a81cc6d7-4f17-448e-8785-7fe3b903e3b6" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../server-v3/instruction/expireInstruction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global/enter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global/map.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instruction/commandTypeEnum.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instruction/enter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instruction/execute.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instruction/expireInstruction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instruction/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instruction/sdsInstruction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instruction/tool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/myLog.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/instruction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/sds.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/set.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/aof.aof" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/aof/enter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/aof/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/aof/routineTask.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/aof/tool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/aof/writeTactic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/aofLoad.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viper/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viper/enter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server-v3/global/map.go" beforeDir="false" afterPath="$PROJECT_DIR$/../server-v3/global/map.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server-v3/instruction/enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/../server-v3/instruction/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aofRewrtie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/aof_temp.aof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/global/enter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/aof.aof" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/aof.aof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/aof/enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/aof/enter.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,24 +42,24 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/temp/redis-golang/server-v4/persistence",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/temp/redis-golang/server-v4/persistence&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\temp\redis-golang\server-v4\persistence" />

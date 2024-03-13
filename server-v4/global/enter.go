@@ -27,7 +27,6 @@ func mapInit() {
 		SetMap:    make(map[string]model.Set),
 		ExpireMap: make(map[string]time.Time),
 	}
-	WholeMap.SdsMap["test"] = "test"
 }
 
 func configInit() {
