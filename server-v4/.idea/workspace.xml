@@ -4,8 +4,44 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a81cc6d7-4f17-448e-8785-7fe3b903e3b6" name="更改" comment="server-v4:fix rewrite aof file bugs">
+    <list default="true" id="a81cc6d7-4f17-448e-8785-7fe3b903e3b6" name="更改" comment="server-v4:finish readme.md and prepare to start server-v5">
+      <change afterPath="$PROJECT_DIR$/../server-v5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/.idea/server-v5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/enum/commandEnum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/enum/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/enum/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/enum/typeEnum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/global/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/global/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/instruction/commonFunc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/instruction/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/instruction/execute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/instruction/expireIns.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/instruction/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/instruction/sdsIns.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/instruction/tool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/log/myLog.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/model/instruction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/model/redisObject.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/model/set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/persistence/aof.aof" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/persistence/aof/enter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/persistence/aof/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/persistence/aof/routineTask.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/persistence/aof/writeTactic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/persistence/aofLoad.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/tool/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/viper/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server-v5/viper/enter.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +73,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -62,18 +101,19 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/temp/redis-golang/server-v4/persistence&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/temp/redis-golang/server-v4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\temp\redis-golang\server-v4" />
       <recent name="D:\temp\redis-golang\server-v4\persistence" />
       <recent name="D:\temp\redis-golang\server-v4\persistence\aof" />
       <recent name="D:\temp\redis-golang\server-v4\instruction" />
-      <recent name="D:\temp\redis-golang\server-v4" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,7 +139,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="server-v4:fix rewrite aof file bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="server-v4:fix rewrite aof file bugs" />
+    <MESSAGE value="server-v4:finish readme.md and prepare to start server-v5" />
+    <option name="LAST_COMMIT_MESSAGE" value="server-v4:finish readme.md and prepare to start server-v5" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

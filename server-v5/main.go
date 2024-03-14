@@ -4,27 +4,13 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"server-v4/instruction"
-	"server-v4/persistence"
-	"server-v4/persistence/aof"
+	"server-v5/instruction"
+	"server-v5/persistence"
 )
 
 func main() {
-	//LoadData()
-	//startAofRoutine()
-
-	//persistence.ReWriteFunc{}.Rewrite()
-	// instructionWhile()
-}
-
-func LoadData() {
-	persistence.LoadAofFile()
-}
-
-func startAofRoutine() {
-	go func() {
-		aof.GoRoutineMethod()
-	}()
+	aofLoad()
+	instructionWhile()
 }
 
 func instructionWhile() {
@@ -42,4 +28,8 @@ func instructionWhile() {
 		// cmdStr = tool.StringTool.HandleUserInstruction(cmdStr)
 		instruction.ExecuteInstruction(cmdStr, 1)
 	}
+}
+
+func aofLoad() {
+	persistence.LoadAofFile()
 }
