@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a81cc6d7-4f17-448e-8785-7fe3b903e3b6" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/persistence/aofRewrtie.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/aof_temp.aof" afterDir="false" />
+    <list default="true" id="a81cc6d7-4f17-448e-8785-7fe3b903e3b6" name="更改" comment="server-v4:fix rewrite aof file bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global/enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/global/enter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/aof.aof" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/aof.aof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/aof/enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/aof/enter.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +22,20 @@
   <component name="GOROOT" url="file://$USER_HOME$/go/go1.21.3" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;oceanSimple&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="38975a27-12fc-4558-8f5a-7d43ba4a6707" />
+        <option name="url" value="git@github.com:oceanSimple/redis-golang.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -90,6 +98,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="server-v4:fix rewrite aof file bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="server-v4:fix rewrite aof file bugs" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
