@@ -8,7 +8,7 @@ import (
 
 func GetFileConnector(path string) (*os.File, error) {
 	var fileConnector, err = os.OpenFile(path,
-		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+		os.O_APPEND|os.O_CREATE|os.O_RDWR, 0666)
 	if err != nil {
 		log.SystemLog.Error("Open file error, file path: "+path,
 			zap.Error(err))

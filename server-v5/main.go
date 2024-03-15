@@ -7,11 +7,13 @@ import (
 	_ "server-v5/config"
 	"server-v5/instruction"
 	"server-v5/persistence"
+	"server-v5/persistence/aof"
 )
 
 func main() {
 	aofLoad()
-	// instructionWhile()
+	go aof.GoRoutineMethod()
+	instructionWhile()
 }
 
 func instructionWhile() {
