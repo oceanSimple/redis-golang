@@ -4,13 +4,14 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	_ "server-v5/config"
 	"server-v5/instruction"
 	"server-v5/persistence"
 )
 
 func main() {
 	aofLoad()
-	instructionWhile()
+	// instructionWhile()
 }
 
 func instructionWhile() {

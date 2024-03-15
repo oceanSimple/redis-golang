@@ -1,0 +1,4 @@
+aof:
+  tactic: everySecond
+
+test: test
