@@ -16,6 +16,10 @@ func setNewKeyToMap(key string, typeName string, value any) string {
 	if v, ok := global.Map[key]; ok && v.Type != typeName {
 		return "Operation against a key holding the wrong kind of value"
 	}
+	// Query for mutex
+	global.WriteMutexMup.Lock()
+	defer global.WriteMutexMup.Unlock()
+	// Set the key and value to the map
 	global.Map[key] = &model.RedisObject{
 		Type: typeName,
 		Ptr:  value,
@@ -26,6 +30,9 @@ func setNewKeyToMap(key string, typeName string, value any) string {
 // getFromMap
 // get the value from the map
 func getFromMap(key string) string {
+	// Query for mutex
+	global.ReadMutexMap.RLock()
+	defer global.ReadMutexMap.RUnlock()
 	// Check the key is existed or not
 	v, ok := global.Map[key]
 	if !ok {

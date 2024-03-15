@@ -29,6 +29,10 @@ func initInstructionBuf() {
 	}
 }
 
+func initInstructionBufWhenRewriteAof() {
+	InsBufWhenRewriteAof = make([]string, 50)
+}
+
 func initFunc() {
 	if tactic == "always" {
 		WriteToAof = alwaysTactic

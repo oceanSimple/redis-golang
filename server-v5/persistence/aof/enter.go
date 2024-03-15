@@ -19,6 +19,8 @@ var (
 )
 
 var (
+	// InsBufWhenRewriteAof The ins buf when rewrite the aof file
+	InsBufWhenRewriteAof []string
 	// WriteToAof is the function to write the instruction to the aof file
 	WriteToAof func(str string)
 	// GoRoutineMethod is the method to run the aof go routine
