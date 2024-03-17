@@ -4,6 +4,7 @@ import (
 	"server-v5/enum"
 	"server-v5/global"
 	"server-v5/model"
+	"server-v5/persistence/rdb"
 	"strconv"
 	"time"
 )
@@ -54,6 +55,9 @@ func expire() *model.Instruction {
 				response = append(response, str)
 				return
 			}
+			// Query for mutex
+			global.ReadMutexExpireMap.Lock()
+			defer global.ReadMutexExpireMap.Unlock()
 			// Check the key is existed
 			if _, ok := global.Map[instruction.Key]; !ok {
 				response = append(response, "0")
@@ -61,6 +65,8 @@ func expire() *model.Instruction {
 			}
 			// set the expire time
 			global.ExpireMap[instruction.Key] = time.Now().Add(time.Duration(expireTime) * time.Second)
+			// set the expire rdb
+			rdb.ExpireMapRDB(instruction.Key, global.ExpireMap[instruction.Key])
 			response = append(response, "1")
 			return
 		},

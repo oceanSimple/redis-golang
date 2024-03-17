@@ -18,8 +18,9 @@ var (
 )
 
 var (
-	WriteMutexMup = sync.Mutex{}
-	ReadMutexMap  = sync.RWMutex{}
+	WriteMutexMup      = sync.Mutex{}
+	ReadMutexMap       = sync.RWMutex{}
+	ReadMutexExpireMap = sync.RWMutex{}
 )
 
 var (

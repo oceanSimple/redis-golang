@@ -12,6 +12,7 @@ import (
 
 func main() {
 	aofLoad()
+	expireRdbLoad()
 	go aof.GoRoutineMethod()
 	instructionWhile()
 }
@@ -35,4 +36,8 @@ func instructionWhile() {
 
 func aofLoad() {
 	persistence.LoadAofFile()
+}
+
+func expireRdbLoad() {
+	persistence.ExpireRdbLoad()
 }

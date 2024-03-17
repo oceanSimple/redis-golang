@@ -62,6 +62,8 @@ func checkKeyIsExpired(key string) int {
 		return -2
 	}
 	// Condition 2: key is not in expire map
+	global.ReadMutexExpireMap.RLock()
+	defer global.ReadMutexExpireMap.RUnlock()
 	if _, ok := global.ExpireMap[key]; !ok {
 		return -1
 	}

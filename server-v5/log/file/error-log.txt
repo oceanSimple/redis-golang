@@ -1,1 +1,0 @@
-{"level":"fatal","ts":"2024-03-15T11:23:10.302+0800","caller":"persistence/aofLoad.go:41","msg":"aof file read failed","error":"read ./persistence/aof.aof: Access is denied."}
