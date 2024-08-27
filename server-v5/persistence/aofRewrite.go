@@ -2,14 +2,14 @@ package persistence
 
 //func ReWriteAof() {
 //	// Set the aof rewrite flag to true
-//	global.AofRewriteFlag = true
+//	valueMap.AofRewriteFlag = true
 //	// Copy the map to a temp map
 //	tempMap := make(map[string]*model.RedisObject)
-//	global.ReadMutexMap.RLock()
-//	for k, v := range global.Map {
+//	valueMap.ReadMutexMap.RLock()
+//	for k, v := range valueMap.Map {
 //		tempMap[k] = v
 //	}
-//	global.ReadMutexMap.RUnlock()
+//	valueMap.ReadMutexMap.RUnlock()
 //
 //	// Write the temp map to the aof file
 //	fileConnector, err := tool.GetFileConnector("./persistence/temp_aof.aof")

@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// Export the global variables
+// Export the valueMap variables
 
 var (
 	// Map store all the map

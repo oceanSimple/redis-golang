@@ -1,0 +1,2 @@
+set h1 hello
+append h1 hello
